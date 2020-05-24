@@ -92,5 +92,8 @@ int main(){
     c3 = c2.modulo();
     c3.imprimir();
 
+    cout << "Testando os getters no complexo 1: ";
+    cout << c1.getReal() << " + " << c1.getImag() << "i" << endl;
+
     return 0;
 }

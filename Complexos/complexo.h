@@ -1,10 +1,10 @@
 class Complexo{
+    double real, imag;
     public:
         Complexo(double preal=0, double pimag=0){
             real = preal;
             imag = pimag;
         }
-        double real, imag;
         Complexo soma(Complexo c);
         Complexo mult(Complexo c);
         Complexo sub(Complexo c);
@@ -12,4 +12,10 @@ class Complexo{
         Complexo conjugado();
         double modulo();
         void imprimir();
+        double getReal(){
+            return real;
+        }
+        double getImag(){
+            return imag;
+        }
 };
