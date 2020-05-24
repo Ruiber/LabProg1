@@ -4,6 +4,11 @@
 
 using namespace std;
 
+Complexo::Complexo(double preal, double pimag){
+    real = preal;
+    imag = pimag;
+}
+
 Complexo Complexo::soma(Complexo c){
     Complexo result;
     result.real = real + c.real;
