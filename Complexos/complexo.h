@@ -7,5 +7,9 @@ class Complexo{
         double real, imag;
         Complexo soma(Complexo c);
         Complexo mult(Complexo c);
+        Complexo sub(Complexo c);
+        Complexo div(Complexo c);
+        Complexo conjugado();
+        double modulo();
         void imprimir();
 };
