@@ -1,3 +1,6 @@
+#ifndef Complexo_h
+#define Complexo_h
+
 class Complexo{
     double real, imag;
     public:
@@ -19,3 +22,5 @@ class Complexo{
             return imag;
         }
 };
+
+#endif
