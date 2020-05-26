@@ -25,6 +25,14 @@ protected:
 public:
     ~Personagem(){
         delete []poderes;
+    }
+    Personagem(const Personagem &p){
+        nome = p.nome;
+        nomeVidaReal = p.nomeVidaReal;
+        nPoderes = p.nPoderes;
+        poderes = new Superpoder*[4];
+        for(int i=0; i<nPoderes; i++)
+            poderes[i] = p.poderes[i];
     }  
     string getNome(){ return nome; }
     string getNomeVidaReal(){ return nomeVidaReal; }
